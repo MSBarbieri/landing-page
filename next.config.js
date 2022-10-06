@@ -4,7 +4,11 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true,
+  },images: {
+    loader: 'akamai',
+    path: '',
   },
+  assetPrefix: './',
   exportPathMap: async function(
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
